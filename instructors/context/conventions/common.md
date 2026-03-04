@@ -332,7 +332,9 @@ Bad: `docker compose up`
 
 ## 4.22. Environment variable references
 
-When referencing an environment variable from `.env.docker.secret` in prose, link it to its section in the wiki and link `.env.docker.secret` to indicate the source:
+When referencing an environment variable from a `.env.*.secret` file in prose, link it to its section in the wiki and link the file name to indicate the source.
+
+**`.env.docker.secret`**
 
 From a wiki file:
 
@@ -346,7 +348,35 @@ From a task file:
 [`VARIABLE_NAME`](../../../wiki/dotenv-docker-secret.md#variable_name) in [`.env.docker.secret`](../../../wiki/dotenv-docker-secret.md#what-is-envdockersecret)
 ```
 
-Following [4.8](#48-links-and-cross-references), the `.env.docker.secret` link only needs to appear once per section when multiple variables are referenced together.
+**`.env.tests.unit.secret`**
+
+From a wiki file:
+
+```markdown
+[`VARIABLE_NAME`](./dotenv-tests-unit-secret.md#variable_name) in [`.env.tests.unit.secret`](./dotenv-tests-unit-secret.md#what-is-envtestsunitsecret)
+```
+
+From a task file:
+
+```markdown
+[`VARIABLE_NAME`](../../../wiki/dotenv-tests-unit-secret.md#variable_name) in [`.env.tests.unit.secret`](../../../wiki/dotenv-tests-unit-secret.md#what-is-envtestsunitsecret)
+```
+
+**`.env.tests.e2e.secret`**
+
+From a wiki file:
+
+```markdown
+[`VARIABLE_NAME`](./dotenv-tests-e2e-secret.md#variable_name) in [`.env.tests.e2e.secret`](./dotenv-tests-e2e-secret.md#what-is-envtestse2esecret)
+```
+
+From a task file:
+
+```markdown
+[`VARIABLE_NAME`](../../../wiki/dotenv-tests-e2e-secret.md#variable_name) in [`.env.tests.e2e.secret`](../../../wiki/dotenv-tests-e2e-secret.md#what-is-envtestse2esecret)
+```
+
+Following [4.8](#48-links-and-cross-references), the file link only needs to appear once per section when multiple variables from the same file are referenced together.
 
 Exception: variables inside fenced code blocks cannot use markdown links — use plain text there.
 

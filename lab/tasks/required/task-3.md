@@ -63,7 +63,7 @@ Complete these steps:
 
 > [!NOTE]
 > The dev server proxies API requests (e.g., `/items`) to the `VITE_API_TARGET` URL.
-> The API token is entered at runtime through the front-end UI — it is not stored in the `.env` file.
+> The [API key](../../../wiki/api.md#api-key) is entered at runtime through the front-end UI — it is not stored in the `frontend/.env.secret` file.
 
 1. [Open a new `VS Code Terminal`](../../../wiki/vs-code.md#open-a-new-vs-code-terminal).
 2. To navigate to the front-end project directory,

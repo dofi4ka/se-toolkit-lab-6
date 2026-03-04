@@ -229,7 +229,7 @@ graph TD
 
 ### 6.1 Student Fetches Items via Frontend
 
-The most common interaction: a student opens the browser, Caddy serves the React SPA as static files, and the SPA calls the API through Caddy. The API token is entered at runtime through the UI and persisted in `localStorage`.
+The most common interaction: a student opens the browser, Caddy serves the React SPA as static files, and the SPA calls the API through Caddy. The API key is entered at runtime through the UI and persisted in `localStorage`.
 
 ```mermaid
 sequenceDiagram
@@ -241,7 +241,7 @@ sequenceDiagram
 
     Student->>Caddy: GET / (opens app in browser)
     Caddy-->>Browser: index.html + JS bundle (static files)
-    Note over Student,Browser: Student enters API token in the UI
+    Note over Student,Browser: Student enters API key in the UI
     Browser->>Browser: Save token to localStorage
     Browser->>Caddy: GET /items (Authorization: Bearer <token>)
     Caddy->>API: Proxy GET /items
