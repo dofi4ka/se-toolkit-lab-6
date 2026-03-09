@@ -9,9 +9,9 @@ Review the meeting report for lab N, iteration M by cross-checking it against th
 ## Steps
 
 1. Parse `$ARGUMENTS` to extract N (lab number) and M (iteration number). Both are required — if missing, ask the user.
-2. Read [`contributing/conventions/meeting-report.md`](../../../contributing/conventions/meeting-report.md) for the report format rules.
-3. Read `instructors/meetings/week-N/meeting-M/meeting-report.md` (substituting actual N and M).
-4. Read `instructors/meetings/week-N/meeting-M/meetings/transcript-by-speaker.txt`.
+2. Read [`contributing/conventions/meeting-report.md`](../../../contributing/conventions/meeting-report.md) for the report format rules and file locations. Substitute actual N and M into the paths defined in the File locations section.
+3. Read the report at the path from step 2.
+4. Read the transcript at the path from step 2.
 5. If the report's **Metadata → Files discussed** section lists any files, read each of them.
 6. Produce a review covering the categories below. For each finding, cite the relevant transcript timestamp or report line so the author can locate it quickly.
 
