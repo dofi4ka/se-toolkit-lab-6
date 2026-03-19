@@ -15,6 +15,7 @@ Rules:
   - LLM configuration is read from environment variables (no hardcoding).
 """
 
+
 from __future__ import annotations
 
 import json
